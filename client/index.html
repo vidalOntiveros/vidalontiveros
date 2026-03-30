@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vidal Ontiveros - Desarrollador web y emprendedor. Soluciones web modernas y diseño funcional.">
+    <meta name="theme-color" content="#8b5a2b">
+    <meta name="robots" content="index, follow">
+    
+    <title>Vidal Ontiveros | Desarrollador Web & Emprendedor</title>
+    
+    <!-- Preconnect para optimizar carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Decorative Background: Se mantiene por estética pero con menor impacto en rendimiento -->
+    <div class="bg-decoration" aria-hidden="true">
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Menú principal">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo" aria-label="Ir al inicio">
+                <span class="logo-icon">
+                    <img src="img/LOGO_01.png" alt="" width="24" height="24" loading="lazy">
+                </span>
+                <span>Vidal Ontiveros</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="nav-menu" id="navMenu" role="menubar">
+                <a href="#inicio" class="nav-link active" role="menuitem">Inicio</a>
+                <a href="#sobre-mi" class="nav-link" role="menuitem">Sobre mí</a>
+                <a href="#servicios" class="nav-link" role="menuitem">Servicios</a>
+                <a href="#portafolio" class="nav-link" role="menuitem">Portafolio</a>
+                <a href="#blog" class="nav-link" role="menuitem">Blog</a>
+                <a href="#contacto" class="nav-link nav-cta" role="menuitem">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="status-dot" aria-hidden="true"></span>
+                Disponible para proyectos
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Hola, soy</span>
+                <span class="title-name">Vidal Ontiveros</span>
+            </h1>
+            <p class="hero-subtitle">
+                Construyo experiencias web modernas. Desarrollador en proceso, emprendedor de corazón.
+            </p>
+            <div class="hero-actions">
+                <a href="#contacto" class="btn btn-primary">
+                    Iniciar conversación
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
+            </div>
+            
+            <div class="hero-stats" aria-label="Estadísticas rápidas">
+                <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Aprendiendo</span>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Dedicación</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-visual" aria-hidden="true">
+            <div class="visual-circle"></div>
+            <div class="visual-shape"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SOBRE MÍ -->
+        <section class="section about" id="sobre-mi" aria-labelledby="sobre-mi-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Conóceme</span>
+                    <h2 class="section-title" id="sobre-mi-title">Sobre mí</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="img/VIDAL_ONT.jpg" alt="Foto de perfil de Vidal Ontiveros" class="image-placeholder" loading="lazy">
+                        </div>
+                        <div class="image-accent" aria-hidden="true"></div>
+                    </div>
+                    
+                    <div class="about-content">
+                        <p class="about-intro">
+                            Soy un desarrollador web enfocado en crear sitios que no solo se vean bien, sino que funcionen de manera impecable.
+                        </p>
+                        <p class="about-text">
+                            Mi enfoque combina aprendizaje constante con disciplina. Creo que el crecimiento real viene de la constancia diaria, no de los atajos. Cada proyecto es una oportunidad para superarme.
+                        </p>
+                        
+                        <div class="values-grid">
+                            <article class="value-card">
+                                <div class="value-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
+                                </div>
+                                <h4>Disciplina</h4>
+                                <p>La base de todo logro sostenible.</p>
+                            </article>
+                            <article class="value-card">
+                                <div class="value-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <h4>Aprendizaje</h4>
+                                <p>Mejorando mis habilidades cada día.</p>
+                            </article>
+                            <article class="value-card">
+                                <div class="value-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                        <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                        <line x1="15" y1="9" x2="15.01" y2="9"/>
+                                    </svg>
+                                </div>
+                                <h4>Honestidad</h4>
+                                <p>Transparencia en cada interacción.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="section services" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Qué hago</span>
+                    <h2 class="section-title" id="servicios-title">Mis Servicios</h2>
+                    <p class="section-desc">Soluciones web enfocadas en resultados y diseño limpio.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="featured-badge">Principal</div>
+                        <div class="card-header">
+                            <div class="service-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                                </svg>
+                            </div>
+                            <span class="service-number">01</span>
+                        </div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Sitios web rápidos, modernos y optimizados para cualquier dispositivo. Código limpio y mantenible.</p>
+                        <ul class="service-features">
+                            <li>Landing Pages</li>
+                            <li>Sitios Personales</li>
+                            <li>Optimización Móvil</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="service-card featured">
+                        <div class="card-header">
+                            <div class="service-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                </svg>
+                            </div>
+                            <span class="service-number">02</span>
+                        </div>
+                        <h3>Productos Digitales</h3>
+                        <p>Recursos y herramientas digitales diseñadas para facilitar tu trabajo. (En desarrollo).</p>
+                        <ul class="service-features">
+                            <li>Templates Web</li>
+                            <li>Recursos de Diseño</li>
+                            <li>Guías Prácticas</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="card-header">
+                            <div class="service-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <span class="service-number">03</span>
+                        </div>
+                        <h3>Freelance</h3>
+                        <p>Colaboración directa para proyectos específicos. Comunicación clara y entregas puntuales.</p>
+                        <ul class="service-features">
+                            <li>Trabajo Personalizado</li>
+                            <li>Precios Accesibles</li>
+                            <li>Soporte Directo</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTAFOLIO & BLOG (Coming Soon) -->
+        <!-- Se simplifica el HTML usando componentes similares, no es necesario repetir código aquí -->
+        <section class="section portfolio" id="portafolio" aria-labelledby="portafolio-title">
+             <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Mi trabajo</span>
+                    <h2 class="section-title" id="portafolio-title">Portafolio</h2>
+                </div>
+                <div class="coming-soon-card">
+                    <div class="cs-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                    </div>
+                    <h3>Próximamente</h3>
+                    <p>Actualmente estoy trabajando en proyectos emocionantes que pronto serán mostrados aquí.</p>
+                    <div class="progress-bar" aria-label="Progreso del portafolio">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section blog" id="blog" aria-labelledby="blog-title">
+             <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Ideas</span>
+                    <h2 class="section-title" id="blog-title">Blog</h2>
+                </div>
+                <div class="coming-soon-card">
+                    <div class="cs-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
+                    <h3>Próximamente</h3>
+                    <p>Artículos sobre desarrollo, disciplina y crecimiento personal estarán disponibles pronto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section contact" id="contacto" aria-labelledby="contacto-title">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <span class="section-tag">Contacto</span>
+                        <h2 class="section-title" id="contacto-title">Hablemos de tu proyecto</h2>
+                        <p class="contact-intro">
+                            Estoy abierto a nuevas oportunidades y colaboraciones. No dudes en contactarme.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:vidal.ontiveros.150802@gmail.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="label">Email</span>
+                                    <span class="value">vidal.ontiveros.150802@gmail.com</span>
+                                </div>
+                            </a>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="label">Ubicación</span>
+                                    <span class="value">Mazatlán, Sinaloa, México</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <span class="social-label">Sígueme:</span>
+                            <a href="https://github.com/vidalOntiveros" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <!-- SVG Icon -->
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/vidalontiveros/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                <!-- SVG Icon -->
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37a4 4 0 1 1-7.74 1.26 4 4 0 0 1 7.74-1.26z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@vidalontiveros" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                                <!-- SVG Icon -->
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M544.5 273.9C500.5 274 457.5 260.3 421.7 234.7L421.7 413.4C421.7 446.5 411.6 478.8 392.7 506C373.8 533.2 347.1 554 316.1 565.6C285.1 577.2 251.3 579.1 219.2 570.9C187.1 562.7 158.3 545 136.5 520.1C114.7 495.2 101.2 464.1 97.5 431.2C93.8 398.3 100.4 365.1 116.1 336C131.8 306.9 156.1 283.3 185.7 268.3C215.3 253.3 248.6 247.8 281.4 252.3L281.4 342.2C266.4 337.5 250.3 337.6 235.4 342.6C220.5 347.6 207.5 357.2 198.4 369.9C189.3 382.6 184.4 398 184.5 413.8C184.6 429.6 189.7 444.8 199 457.5C208.3 470.2 221.4 479.6 236.4 484.4C251.4 489.2 267.5 489.2 282.4 484.3C297.3 479.4 310.4 469.9 319.6 457.2C328.8 444.5 333.8 429.1 333.8 413.4L333.8 64L421.8 64C421.7 71.4 422.4 78.9 423.7 86.2C426.8 102.5 433.1 118.1 442.4 131.9C451.7 145.7 463.7 157.5 477.6 166.5C497.5 179.6 520.8 186.6 544.6 186.6L544.6 274z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- FORMULARIO CON ACCESIBILIDAD Y API LISTA -->
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <h3 class="form-title">Envíame un mensaje</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre" required autocomplete="name" aria-describedby="name-error">
+                                <span id="name-error" class="form-error" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email" aria-describedby="email-error">
+                                <span id="email-error" class="form-error" aria-live="polite"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" placeholder="¿En qué puedo ayudarte?" rows="5" required aria-describedby="message-error"></textarea>
+                            <span id="message-error" class="form-error" aria-live="polite"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">Enviar mensaje</span>
+                            <span class="btn-loader" aria-hidden="true" style="display: none;">
+                                <!-- Aquí iría un spinner SVG si deseas -->
+                            </span>
+                            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                        <div id="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#inicio" class="footer-logo">
+                        <span class="logo-icon">
+                            <img src="img/LOGO_03.png" alt="" width="24" height="24" loading="lazy">
+                        </span>
+                        Vidal Ontiveros
+                    </a>
+                    <p>Construyendo con propósito.</p>
+                </div>
+                <p class="footer-copy">&copy; <span id="year"></span> Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
